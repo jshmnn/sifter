@@ -2,416 +2,261 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Test Table</title>
-<style>
-/*--- All OUR CSS GOES HERE*/
-	body {
-		background: #C0C0C0;
-		margin:0;/*space on the outside*/
-		padding:0; /*space on the inside*/
-		font-family: 'Roboto',Open-Sans;
-	-webkit-font-smoothing:antialiased;
-		text-decoration: none;
-	}
-
-#wrapper {
-	width: 960px;
-	height: auto;
-	background: #FFFFFF; /*color of header*/
-	border-left: 5px solid #CFE5FF; /*both  left/right borders are on either side of header*/
-	border-right: 5px solid #BAABFF;
-	overflow: auto; /*overflow can be scroll/hidden/auto. if content expands further than heigh or width, it will scroll, with hidden the excess content wont show, with auto it adjusts automatically*/
-	margin: 0 auto;
-	padding: 10px;
-			text-decoration: none;
-
-}
-#header { /*for the header section with logo and social media links*/
-	width:100%;/*- a full 960px */
-	height: 100px;
-	border-bottom: 5px solid #C5FFCE;
-	border-top: 5px solid #FFFCBD;
-
-}
-#logo { /*Logo on upper left hand corner*/
-	float: left;
-	margin: 15px 0px 0px 80px ; /*for margin AND padding you have 4 numbers, top right bottom left..*/
-}
-#social { /* ICONS to othersights, like FACEBOOK*/
-	float:right;
-	margin: 20px 30px 0px 0px;
-}
-#social ul li { /*stylizes the LIST ITEMS -we type SOCIAL UL LI, because that's the order in 					which they are embedded*/
-	float: left; /*This makes them DISPLAY IN THE ORDER which we listed them*/ 
-	list-style: none; /*takes away bullet points*/
-	padding-right:5px; /*makes them not-so close together*/
-}
-
-#social img { /*this give the IMAGES the size..*/
-	height: 55px;
-	width: 55px;
-}
-#sidebar { /* for the sidebar, obviously */
-	float: left;
-	width: 189px;
-	height: 100%;
-	background-color: #1F6B86;
-}
-
-#menu ul{
-	float: left;
-	height: auto; /*this just means FLEXIBLE height*/
-	width: 100px;
-}
-
-#menu ul li {
-	list-style: none;
-	padding: 5px; /*spreads out the list item*/
-	text-align: center;
-}
-
-#menu ul li a { /*this stylizes the LINKS, the A HREF links..*/
-	background: #2680A3;
-	color: #f4e016;
-	text-decoration: none;
-	padding: 10px 0px;
-	display: block;
-}
-#menu ul li a:hover{
-color:#7D1288;
-}
-
-#content {
-	float: left;
-	width: 655px;
-	height: 100%;
-	padding-left: 15px;
-	letter-spacing: 1;
-	color: #57574C;
-	border-left: 3px solid #C5FFCE;
-	text-decoration: none;
-}
-h1 {
-	text-align: center;
-	padding:5px;
-	border-bottom: 1px solid #C5FFCE;
-	text-decoration: none;
-
-
-}
-p { 
-	text-indent: 50px;
-	line-height: 25px;
-
-}
-
-.top a{ /*this is for 'BACK TO THE TOP link.. and we use a dot or period here because its a CLASS. CLASS=DOT*/
-	color: #1F6B86;
-
-}
-
-table {
-	overflow:auto;
-	width: 100%;	
-}
-
-</style> 
+	<title>sifterindex</title>
+<link rel="stylesheet" type="text/css" href="sifter.css">
 </head>
 
-<body>
+<div id="wrapper">
+<div id="header">
+	<div id="logo">
+		<a href="http://imgur.com/qDgQIMW"><img src="http://i.imgur.com/qDgQIMW.png" width="350" height="80" alt="logo" title="logo" style ="opacity:.2";> </a>
+	</div><!--END LOGO-->
+		<h1> Important News Delivered Right Up Your Ass</h1>
+	
+</div><!--END HEADER-->
+<div style="width: 980px; margin: 0 auto; overflow: hidden;">
+    
+</div>
 
-	<div id="wrapper"> 	<!--START WRAPPER--> <!--for div id use the pound sign-->
-		<div id="header"><!--START HEADER-->
-			<div id="logo">
-				<a href="http://imgur.com/qDgQIMW"><img src="http://i.imgur.com/qDgQIMW.png" width="350" height="80" alt="logo" title="logo"/> </a>
-			</div><!--END of LOGO-->
-		   			<div id="social"> <!--SOCIAL ICONS UPPER RIGHT HAND-->
-						<ul> <!--different images or texts can be lined up in UNORDERED LISTS-->
-					<!--Now all ITEMS in the UNORDERED LIST-->
-							<li> 
-								<a href="http://www.facebook.com" target="_blank">
-								<img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook" title="facebook"></a>
-							</li>
-							<li> 
-								<a href="http://www.twitter.com" target="_blank">
-								<img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"></a>
-								</li>
-							<li>
-								<a href="https://www.youtube.com/user/GillRudiger" target="_blank">
-								<img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"></a>
-							</li>
-							<li>
-								<a href="http://www.plus.google.com" target="_blank">
-								<img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"></a>
-							</li>
-							<li>
-								<a href="http://www.9gag.com" target="_blank">
-								<img src="http://i.imgur.com/GRs6E63.png" alt="9gag" title="9gag"></a>
-							</li>
-							<li>
-								<a href="http://reddit.com" target="_blank"> 
-								<img src="http://i.imgur.com/4LlUQxA.png" title="reddit"></a>
-							</li>
-							</ul>
-					</div><!--END SOCIAL-->
-		</div><!-- END HEADER-->
-	<div id="sidebar">
-		<div id="menu"><!--START MENU-->
-			<ul>
-				<li><h2><a href="#LOL">LOL</a></h2></li><!--these are INTERNAL LINKS 2 other sections-->
-				<li><h2><a href="#COOL">COOL</a></h2></li>
-				<li><h2><a href="#GTFO">GTFO</a></h2></li>
-				<li><h2><a href="#LAME">LAME</a></h2></li>
-			</ul>
-		</div><!--END MENU-->
-	</div><!--END SIDEBAR-->
-		<div id="content"><!--STUFF INSIDE the BODY PARAGRAPHS-->
-			<a name="LOL"> <h1> LOL Stuff</h1> 
-					<div class="table">
+<div id="container" style="padding-top: 34px;
+  padding-right: 60px;">
 
-						<table cellspacing="5" cellpadding="5" bgcolor="#F8FFD9">
-							<tr align="left">
-								<th> From </th> <th> Title</th> <!--Td= table data, you can also use th TableHEader-->
+<section class="left-column"><!--LEFT COLUMN-->
+<div style="border : solid 2px #51AA6A; background-color: rgba(0,0,0,0.30);
+    color: #fff; padding : 2px; width : 340px; height : 620px; overflow : auto; ">
+
+					
+
+					<table width="350"cellspacing="15" cellpadding="2">
+							
+							<tr>
+								<th id="top" colspan="2">GLOBAL</th>
+							</tr>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com" target="_blank" align="left"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a></td>
+								<td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank"><h4>Awesome or Horrible, these are the most watched Youtube videos of all time.</h4></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Awesome or Horrible, these are the most watched Youtube videos of all time.</td>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>The top 32 websites on the internet in 2014</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank"><h4>Facebook overthrown by ISIS leaders, millions dead</h4></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
+								<td style="width:40px; height:40px;"><a href="http://www.twitter.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>Random article on Twitter, so interesting and wonderful</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank">Facebook overthrown by ISIS leaders, millions dead</td>
 							</tr>
 							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
+								<td style="width:40px; height:40px;"><a href="http://www.9gag.com" target="_blank"><img src="http://i.imgur.com/GRs6E63.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td> <a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank"><h4>Watch as comedian confront real scam-artist</h4></a>
+								</td>
 							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
+								<td style="width:40px; height:40px"> <a href="http://reddit.com" target="_blank"><img src="http://i.imgur.com/4LlUQxA.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td>
+								<a href= "http://www.dishnation.com/female-ufc-fighter-breaks-sexist-reporters-ribs/" target="_blank"> <h4>Watch Female UFC fighter breaks 4 ribs of reporter after he insults her </h4></a>
+								</td>
 							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
+					</table>	
+
+</div>
+</section><!--END LEFT COLUMN-->
+
+<section class="right-column"><!--START RIGHT COLUMN-->
 
 
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
+<div style="border : solid 2px #4C7EA3; background-color: rgba(0,0,0,0.30);
+    color: #fff; padding : 2px; width : 340px; height : 620px; overflow : auto; ">
 
-
-						</table>
 				
 
-					</div><!--END of TABLE-->
-				</p>
-				<div class="top"><h5><a href="#top">Go to the TOP</h5></div>
-			<a name="COOL"> <h1>Cool Stuff</h1> </br>
-				<div class="table2">
-
-				<table cellspacing="5" cellpadding="5" bgcolor="#FFD1D1">
-							<tr align="left">
-								<th> From </th> <th> Title</th> <!--Td= table data, you can also use th TableHEader-->
+			<table width="350"cellspacing="15" cellpadding="2">
+							
+							<tr>
+								<th id="top" colspan="2" >THE FEELS</th>
+							</tr>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com" target="_blank" align="left"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a></td>
+								<td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank"><h4>Awesome or Horrible, these are the most watched Youtube videos of all time.</h4></td>
 							</tr>
 							<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>The top 32 websites on the internet in 2014</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank"><h4>Facebook overthrown by ISIS leaders, millions dead</h4></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
+								<td style="width:40px; height:40px;"><a href="http://www.twitter.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>Random article on Twitter, so interesting and wonderful</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank"><h4>Facebook overthrown by ISIS leaders, millions dead</h4></td>
 							</tr>
 							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
+								<td style="width:40px; height:40px;"><a href="http://www.9gag.com" target="_blank"><img src="http://i.imgur.com/GRs6E63.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td> <a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank"><h4>Watch as comedian confront real scam-artist</h4></a>
+								</td>
 							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
+								<td style="width:40px; height:40px"> <a href="http://reddit.com" target="_blank"><img src="http://i.imgur.com/4LlUQxA.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td>
+								<a href= "http://www.dishnation.com/female-ufc-fighter-breaks-sexist-reporters-ribs/" target="_blank"> <h4>Watch Female UFC fighter breaks 4 ribs of reporter after he insults her</h4> </a>
+								</td>
 							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-						</table>
-					</div>
-			<div class="top"><h5><a href="#top">Go to the TOP</h5></div>
+					</table>	
+</div>
+</section><!--END RIGHT COLUMN-->
 
 
-			<a name="GTFO"> <h1>GTFO Stuff</h1> </br>
-				<div class="table3">
-				<table cellspacing="5" cellpadding="5" bgcolor="#CFE5FF">
-							<tr align="left">
-								<th> From </th> <th> Title</th> <!--Td= table data, you can also use th TableHEader-->
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
+<section class="center-column"><!--BEGINNING MIDDLE COLUMN-->
+<div style="border : solid 2px #FFD2FA; background-color: rgba(0,0,0,0.30);
+    color: #fff; padding : 2px; width : 340px; height : 620px; overflow : auto; ">
 
+		<table width="350"cellspacing="15" cellpadding="2">
+							
+							
+							<tr>
+								<th id="top" colspan="2">USA</th>
+							</tr>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com" target="_blank" align="left"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a></td>
+								<td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank"><h4>Awesome or Horrible, these are the most watched Youtube videos of all time.</h4></td>
+							</tr>
+							<tr>
+								<td style="width:40px; height:40px;"><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>The top 32 websites on the internet in 2014</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank"><h4>Facebook overthrown by ISIS leaders, millions dead</h4></td>
+							</tr>
+							<tr>
+								<td style="width:40px; height:40px;"><a href="http://www.twitter.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank"><h4>Random article on Twitter, so interesting and wonderful</h4></td>
+							</tr>
+							<tr> 
+								<td style="width:40px; height:40px;"><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td><a href="https://www.facebook.com" target="_blank"><h4>Facebook overthrown by ISIS leaders, millions dead</h4></td>
+							</tr>
+							<tr>
+								<td style="width:40px; height:40px;"><a href="http://www.9gag.com" target="_blank"><img src="http://i.imgur.com/GRs6E63.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td> <a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank"><h4>Watch as comedian confront real scam-artist</h4></a>
+								</td>
+							<tr>
+								<td style="width:40px; height:40px"> <a href="http://reddit.com" target="_blank"><img src="http://i.imgur.com/4LlUQxA.png" style="max-height:100%; max-width:100%/"></a>
+								</td>
+								<td>
+								<a href= "http://www.dishnation.com/female-ufc-fighter-breaks-sexist-reporters-ribs/" target="_blank"> <h4>Watch Female UFC fighter breaks 4 ribs of reporter after he insults her </h4> </a>
+								</td>
+							</tr>
+					</table>	
+</div>
+</section><!--END MIDDLE COLUMN-->
 
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
+<div id="footer">
+<div id="slogo"><!--START SIGHT SIFTED-->
+		<h5 style="font-weight:100;">Sites we steal from:</h5>
+		<div id="social"> <!--START SOCIAL-->
+			<ul> <!--different images or texts can be lined up in UNORDERED LISTS- TEMS in the UNORDERED LIST-->
+				<li> 	
+					<a href="http://www.facebook.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook"title="facebook"></a>
+					</li>
+				<li> 
+					<a href="http://www.twitter.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"></a>
+				<li>
+					<a href="https://www.youtube.com/user/GillRudiger" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"></a>
+				</li>
+				<li>
+				<a href="http://www.plus.google.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"></a>
+				</li>
+				<li>
+					<a href="http://www.9gag.com" target="_blank">
+					<img src="http://i.imgur.com/GRs6E63.png" alt="9gag" title="9gag"></a>
+				</li>
+				<li>
+					<a href="http://reddit.com" target="_blank"> 
+					<img src="http://i.imgur.com/4LlUQxA.png" title="reddit"></a>
+				</li>
+				<li> 	
+					<a href="http://www.facebook.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook"title="facebook"></a>
+					</li>
+				<li> 
+					<a href="http://www.twitter.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"></a>
+				<li>
+					<a href="https://www.youtube.com/user/GillRudiger" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"></a>
+				</li>
+				<li>
+				<a href="http://www.plus.google.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"></a>
+				</li>
+				<li>
+					<a href="http://www.9gag.com" target="_blank">
+					<img src="http://i.imgur.com/GRs6E63.png" alt="9gag" title="9gag"></a>
+				</li>
+				<li>
+					<a href="http://reddit.com" target="_blank"> 
+					<img src="http://i.imgur.com/4LlUQxA.png" title="reddit"></a>
+				</li>
+				<li> 	
+					<a href="http://www.facebook.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook"title="facebook"></a>
+					</li>
+				<li> 
+					<a href="http://www.twitter.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"></a>
+				<li>
+					<a href="https://www.youtube.com/user/GillRudiger" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"></a>
+				</li>
+				<li>
+				<a href="http://www.plus.google.com" target="_blank">
+					<img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"></a>
+				</li>
+				<li>
+					<a href="http://www.9gag.com" target="_blank">
+					<img src="http://i.imgur.com/GRs6E63.png" alt="9gag" title="9gag"></a>
+				</li>
+				<li>
+					<a href="http://reddit.com" target="_blank"> 
+					<img src="http://i.imgur.com/4LlUQxA.png" title="reddit"></a>
+				</li>
+				</ul>
+		</div><!--END SOCIAL-->
+	</div><!--END SLOGO-->
+	</div>
 
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
+	<div id="flogo"><!--LOGO in lower right hand corner-->
+		<a href="http://imgur.com/qDgQIMW"><img src="http://i.imgur.com/qDgQIMW.png" width="350" height="80" alt="logo" title="logo" style ="opacity:.5;"> </a>
+			<a href="http://imgur.com/qDgQIMW"><img src="http://i.imgur.com/qDgQIMW.png" width="350" height="80"  style ="opacity:.5;"> </a> 
 
+</div>
+</div>
 
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-
-						</table>
-					</div>
-			<div class="top"><h5><a href="#top">Go to the TOP</h5></div>
-			<a name="LAME"> <h1>Lame Stuff</h1> </br>
-				<div class="table4">
-				<table cellspacing="5" cellpadding="5" bgcolor="#BAABFF">
-							<tr align="left">
-								<th> From </th> <th> Title</th> <!--Td= table data, you can also use th TableHEader-->
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-								<tr>
-								<td><a href="http://imgur.com/WJ446tq" target="_blank"><img src="http://i.imgur.com/WJ446tq.png" alt="clg" title="clg"></a></td><td><a href="https://www.youtube.com/watch?v=Qk4acvdyyqo" target="_blank">Sleezy AOL is still cahrging 2.5 million unsuspecting old people for monthly email accounts.</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.youtube.com/drewoncue/" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="ytlogo" title="ytlogo"></a></td><td><a href="http://netforbeginners.about.com/od/weirdwebculture/tp/The-Most-Addictive-Websites-of-2012.htm" target="_blank">The top 32 websites on the internet in 2014</td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/MjFsmq0" target="_blank"><img src="http://i.imgur.com/MjFsmq0.png" alt="hpl"title="hpl"></a></td>
-
-
-								<td><a href="http://www.huffingtonpost.com/2015/03/03/jack-vale-prank-call_n_6792734.html?utm_hp_ref=comedy" target="_blank">Hilarious Comedian calls scam-artists and records himself being scammed</a></td>
-							</tr>
-							<tr>
-								<td><a href="http://imgur.com/AeKo1LS" target="_blank"><img src="http://i.imgur.com/AeKo1LS.jpg" alt="jlg"title="jlg"></a></td> 
-								
-								<td><a href= "http://931jackfm.cbslocal.com/2015/03/06/watch-ufc-fight-ronda-rousey-gets-rowdy-with-reporter-and-unintentionally-breaks-his-ribs/</" target="_blank"> Female UFC fighter breaks 4 ribs of reporter after being insulter.</a></td>
-							</tr>
-						</table>
-				<div class="top"><h5><a href="#top">Go to the TOP</h5></div>
-			</div>
-		</div>
-	</div><!--END WRAPPER-->
-</body>
-</html>

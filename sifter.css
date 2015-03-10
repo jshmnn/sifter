@@ -1,0 +1,113 @@
+
+<style>
+
+A{text-decoration:none}
+a { color:black } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
+body{
+    background-image: url('sunport.jpg');
+    background-size: cover;
+    font-family: 'Segoe UI Light';
+    background-attachment: fixed;
+}
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+}
+
+
+#header { /*for the header section with logo and social media links*/
+	width:100%;/*- a full 960px */
+	height: 153px;
+	}
+
+#logo { /*Logo on upper left hand corner*/
+	padding: 9px 534px 0px;
+	}
+}
+#content{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(0,0,0,0.30);
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+
+h1 {
+	text-align: center;
+	border-bottom: 2px solid #fff;
+	font-color:rgba(0,0,0,0.30);
+	opacity: .1;
+}
+#top {
+	text-align: center;
+	font-size: 20pt;
+	border:1px solid white;
+	opacity: .4;
+  	font-size: -webkit-xxx-large;
+}
+
+.footer{
+    background-color: rgba(0,0,0,0.30);
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    clear:both;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    font-size: 20pt;
+}
+.left-column
+{
+float:left;
+width:26%;
+background-color: rgba(255, 255, 255, 0.3);
+}
+.right-column
+{
+float:right;
+width:26%;
+background-color: rgba(255, 255, 255, 0.3);
+}
+.center-column
+{
+margin:auto;
+width:26%;
+background-color: rgba(255, 255, 255, 0.3);
+}
+#slogo {
+	float:left;
+	font-weight: lighter;
+}
+
+#social { /* ICONS to othersights, like FACEBOOK*/
+	float:right;
+	margin: -68px 30px 2px -41px;
+}
+#social ul li { /*stylizes the LIST ITEMS -we type SOCIAL UL LI, because that's the order in 					which they are embedded*/
+	float: left; /*This makes them DISPLAY IN THE ORDER which we listed them*/ 
+	list-style: none; /*takes away bullet points*/
+	padding-right:5px; /*makes them not-so close together*/
+	margin-top: 35px;
+}
+
+#social img { /*this give the IMAGES the size..*/
+	height: 30px;
+	width: 30px;
+	}
+#flogo {
+	
+}
+</style>
